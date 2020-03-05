@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.OTP"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_50sdp"
+        android:text="Please enter the OTP"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/enter_otp1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/enter_otp2"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/enter_otp3"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/enter_otp4"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textColor="@color/black"
+            android:maxLength="1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Verify"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:onClick="btnVerify"/>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.Signup"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_marginTop="@dimen/_150sdp"
+            android:backgroundTint="@color/White"
+            app:cardCornerRadius="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+            <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="SIGN UP"
+                 android:textColor="@color/black"
+                 android:textStyle="bold"
+                 android:textSize="@dimen/_25sdp"
+                 android:layout_marginTop="@dimen/_20sdp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Name"
+            android:textColorHint="@color/black_overlay"
+            android:textStyle="bold"
+            android:maxLength="30"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Email"
+            android:maxLength="30"
+            android:textColorHint="@color/black_overlay"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="password"
+            android:maxLength="10"
+            android:textColorHint="@color/black_overlay"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/create_account"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Create Account"
+            android:onClick="createaccount"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:text="Forgot password?"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </FrameLayout>>
+
+</LinearLayout>

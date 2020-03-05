@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_190sdp"
+        android:src="@drawable/contact_back"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTACT US"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:textSize="@dimen/_25sdp"
+        android:textColor="@color/White"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="While we're good with smoke signals, there are simpler ways for us to get in touch and answer your question"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/White"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_330sdp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_220sdp"
+            android:text="+91 96011 42001"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_20sdp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Monday-Friday"
+            android:gravity="center"
+            android:textColor="@color/lightblue"
+            android:textSize="@dimen/_10sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="8:00AM To 6:00PM"
+            android:gravity="center"
+            android:textColor="@color/lightblue"
+            android:textSize="@dimen/_10sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="SEND A MESSAGE"
+            android:textColor="@color/lightblue"
+            android:textSize="@dimen/_20sdp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_340sdp"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_340sdp"
+            android:src="@drawable/twitter"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+    </LinearLayout>
+
+</FrameLayout>

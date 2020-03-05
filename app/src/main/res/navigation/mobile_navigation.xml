@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.indiasforestmatrix.Navigation.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.indiasforestmatrix.Navigation.ui.Profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_customerreview"
+        android:name="com.example.indiasforestmatrix.Navigation.ui.Customerreview.CustomerreviewFragment"
+        android:label="Customer Review"
+        tools:layout="@layout/fragment_customerreview" />
+
+    <fragment
+        android:id="@+id/nav_contactus"
+        android:name="com.example.indiasforestmatrix.Navigation.ui.Contactus.ContactusFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contactus" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.indiasforestmatrix.Navigation.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_aboutus"
+        android:name="com.example.indiasforestmatrix.Navigation.ui.Aboutus.AboutusFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_aboutus" />\
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.indiasforestmatrix.Navigation.ui.Aboutus.AboutusFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_Logout"/>
+
+</navigation>

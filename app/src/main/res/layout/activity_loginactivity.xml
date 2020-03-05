@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Login.Loginactivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:src="@drawable/logo"
+                android:layout_marginTop="@dimen/_30sdp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/White"
+            app:cardCornerRadius="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="LOGIN"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_25sdp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="username"
+                    android:inputType="textCapWords"
+                    android:textColorHint="@color/black_overlay"
+                    android:textColor="@color/black"
+                    android:maxLength="30"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="password"
+                    android:textColorHint="@color/black_overlay"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"
+                    android:maxLength="10"
+                    android:drawableLeft="@drawable/ic_lock_outline_black_24dp"/>
+
+                <Button
+                    android:id="@+id/loginbtn"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="Login"
+                    android:onClick="login"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:text="not_registered?"
+                        tools:ignore="InvalidId"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_5sdp"/>
+                    <TextView
+                        android:id="@+id/textview_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:text="@string/register"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/forgot_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:text="Forgot password?"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_5sdp"/>
+                </LinearLayout>
+
+            </LinearLayout>>
+
+        </androidx.cardview.widget.CardView>
+
+        </LinearLayout>>
+    </FrameLayout>
+
+
+
+</LinearLayout>
