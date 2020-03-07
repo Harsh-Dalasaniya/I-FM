@@ -14,6 +14,8 @@ buildscript {
     }
 }
 
+
+
 allprojects {
     repositories {
         google()
@@ -21,6 +23,12 @@ allprojects {
         
     }
 }
+
+ext{
+    rxjava2Version = '2.1.9'
+    rxandroidVersion = '2.1.1'
+}
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir

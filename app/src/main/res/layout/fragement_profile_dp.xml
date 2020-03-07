@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:gravity="center"
+
+    >
+    <ImageView
+        android:src="@drawable/gir"
+        android:id="@+id/profile_dp"
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"/>
+    <TextView
+        android:id="@+id/edit_dp"
+        android:text="change Profile"
+        android:textSize="20sp"
+        android:textColor="@color/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
