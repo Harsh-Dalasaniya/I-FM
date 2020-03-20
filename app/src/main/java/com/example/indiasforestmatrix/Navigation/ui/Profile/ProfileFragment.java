@@ -131,7 +131,6 @@ public class ProfileFragment extends Fragment {
                 alert.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
                 alert.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-
             }
 
         });

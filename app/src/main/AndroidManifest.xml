@@ -61,7 +61,7 @@
             android:value="AIzaSyCvMtAx0gL7Ls24vFJnH6xB7IporVuU0hY" />
 
         <activity android:name=".Content.Places" />
-        <activity android:name=".ListView.ListviewActivity" />
+        <activity android:name=".Recyclerview.ListviewActivity" />
         <activity android:name=".Login.OTP" />
         <activity android:name=".Content.ImagesActivity" />
         <activity android:name=".Content.FAQsActivity" />

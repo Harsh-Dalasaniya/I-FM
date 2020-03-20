@@ -1,4 +1,4 @@
-package com.example.indiasforestmatrix.ListView;
+package com.example.indiasforestmatrix.Recyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
