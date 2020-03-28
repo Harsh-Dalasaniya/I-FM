@@ -1,9 +1,14 @@
 package com.example.indiasforestmatrix.Recyclerview;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,14 +19,18 @@ import com.example.indiasforestmatrix.R;
 
 import java.util.List;
 
-public class Adapterr extends RecyclerView.Adapter<Adapterr.ViewHolder> {
+import javax.sql.RowSet;
+
+public class Adapterr extends RecyclerView.Adapter<Adapterr.ViewHolder> implements adapter {
 
     private List<POJO> POJO;
-    Context mcontext;
-
-    public Adapterr(List<POJO> POJO,Context mcontext) {
+    Context context;
+    private static adapter adapterInterface;
+    private ItemClickListener onItemClickListener;
+    public Adapterr(List<POJO> POJO, Context context) {
         this.POJO = POJO;
-        this.mcontext= mcontext;
+        this.context= context;
+        this.adapterInterface=adapterInterface;
     }
 
     @NonNull
@@ -35,14 +44,32 @@ public class Adapterr extends RecyclerView.Adapter<Adapterr.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull Adapterr.ViewHolder holder, int i) {
 
-        POJO d=POJO.get(i);
+        POJO d = POJO.get(i);
         holder.txt.setText(d.getListitem());
         holder.img.setImageResource(d.getImageId());
-    }
+        holder.txt.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                onItemClickListener.onItemClick(v, i);
+               // Log.d("CREATETEST", d.getWEB());
+                //adapterInterface.onClickItem(d.getWEB());
+            }
+        });
 
+    }
     @Override
     public int getItemCount() {
         return POJO.size();
+    }
+
+    public void setItemClickListener(ItemClickListener clickListener) {
+        onItemClickListener = clickListener;
+    }
+
+    @Override
+    public void onClickItem(String web) {
+
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder

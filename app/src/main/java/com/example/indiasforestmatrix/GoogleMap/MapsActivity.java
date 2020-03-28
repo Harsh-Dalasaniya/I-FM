@@ -106,7 +106,7 @@ MapView mapView;
         uiSettings.setCompassEnabled(true);
         uiSettings.setZoomControlsEnabled(true);
 
-        LatLng ny = new LatLng(23, 72);
+        LatLng ny = new LatLng(22.3039, 70.8022);
 
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(ny);

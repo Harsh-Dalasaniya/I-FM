@@ -12,11 +12,10 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <uses-feature android:name="android.hardware.camera.flash" />
     <uses-feature android:name="android.hardware.camera" />
-
     <uses-feature android:name="android.hardware.camera.autofocus" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -27,20 +26,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".ForestDetails"></activity>
         <activity
             android:name=".Splashscreen.Splashactivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
-
         <activity android:name=".Content.Infoacti" />
 
         <uses-library android:name="com.google.android.maps" />
@@ -58,7 +53,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCvMtAx0gL7Ls24vFJnH6xB7IporVuU0hY" />
+            android:value="AIzaSyC_9ZE0PTwMfuXv6JuG9z-h9eSpb62eJt8" />
 
         <activity android:name=".Content.Places" />
         <activity android:name=".Recyclerview.ListviewActivity" />
@@ -71,21 +66,14 @@
             android:label="@string/title_activity_navigationdrawer" />
         <activity
             android:name=".Login.Loginactivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        </activity>
-
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
             android:name=".Login.Forgotpassword"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
         <activity
             android:name=".Login.Signup"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -97,6 +85,5 @@
                 android:resource="@xml/file_provider_paths" />
         </provider>
     </application>
-
 
 </manifest>

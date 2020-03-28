@@ -4,6 +4,7 @@ public class POJO {
 
     String listitem;
     int imageId;
+    String web;
 
 
     public String getListitem() {
@@ -22,9 +23,12 @@ public class POJO {
         this.imageId = imageId;
     }
 
+    public  String getWEB(){return web;}
 
-    public POJO(String listitem, int imageId) {
+
+    public POJO(String listitem, int imageId, String web) {
         this.listitem = listitem;
         this.imageId = imageId;
+        this.web = web;
     }
 }
