@@ -25,6 +25,8 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 
+import static androidx.navigation.ui.NavigationUI.setupActionBarWithNavController;
+
 public class Navigationdrawer extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -51,12 +53,12 @@ public class Navigationdrawer extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_profile, R.id.nav_customerreview,
+                R.id.nav_home, R.id.nav_customerreview,
                 R.id.nav_contactus, R.id.nav_share, R.id.nav_aboutus)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+        setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
     }
 
@@ -65,33 +67,6 @@ public class Navigationdrawer extends AppCompatActivity {
        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.navigationdrawer, menu);
 
-       /* int id = item.getItemId();
-
-       if(id == R.id.nav_home){
-       }
-
-       else if(id == R.id.nav_profile){
-       }
-
-       else if(id == R.id.nav_customerreview){
-       }
-
-       else if(id == R.id.nav_share){
-           Intent shareIntent = new Intent();
-           shareIntent.setAction(Intent.ACTION_SEND);
-           shareIntent.putExtra(Intent.EXTRA_TEXT,"");
-           shareIntent.setType("text/plain");
-           startActivity(Intent.createChooser(shareIntent,"share via"));
-       }
-
-       else if(id == R.id.nav_contactus){
-       }
-
-       else if(id == R.id.nav_aboutus){
-       }
-
-       DrawerLayout drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
-       drawer.closeDrawer(GravityCompat.START);*/
        return true;
     }
 

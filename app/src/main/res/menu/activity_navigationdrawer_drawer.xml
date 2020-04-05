@@ -8,10 +8,7 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home_black_24dp"
             android:title="@string/menu_home" />
-        <item
-            android:id="@+id/nav_profile"
-            android:icon="@drawable/ic_person_black_24dp"
-            android:title="Profile" />
+
         <item
             android:id="@+id/nav_customerreview"
             android:icon="@drawable/ic_create_black_24dp"

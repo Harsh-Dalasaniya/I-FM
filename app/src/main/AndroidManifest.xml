@@ -12,13 +12,6 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <uses-feature android:name="android.hardware.camera.flash" />
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -27,6 +20,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme">
         <activity android:name=".ForestDetails"></activity>
+
         <activity
             android:name=".Splashscreen.Splashactivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -36,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".Content.Infoacti" />
 
         <uses-library android:name="com.google.android.maps" />
@@ -63,27 +58,18 @@
         <activity android:name=".Content.NewsActivity" />
         <activity
             android:name=".Navigation.Navigationdrawer"
-            android:label="@string/title_activity_navigationdrawer" />
+            android:label="@string/title_activity_navigationdrawer"/>
         <activity
             android:name=".Login.Loginactivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
             android:name=".Login.Forgotpassword"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Login.Signup"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity"/>
 
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.indiasforestmatrix.provider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_provider_paths" />
-        </provider>
     </application>
 
 </manifest>

@@ -7,8 +7,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GoogleMap.MapsActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <com.google.android.gms.maps.MapView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/mapr"/>
+        android:id="@+id/mapr">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            map:cardCornerRadius="@dimen/_20sdp">
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+            </androidx.appcompat.widget.SearchView>
+
+        </androidx.cardview.widget.CardView>
+    </com.google.android.gms.maps.MapView>
+
+    </FrameLayout>
+
+
 </LinearLayout>

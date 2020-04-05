@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login.OTP"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/backg">
 
 
     <TextView
@@ -14,7 +15,8 @@
         android:layout_margin="@dimen/_50sdp"
         android:text="Please enter the OTP"
         android:textSize="@dimen/_15sdp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@color/White"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +31,8 @@
             android:clickable="false"
             android:maxLength="1"
             android:gravity="center"
-            android:textColor="@color/black" />
+            android:textColor="@color/White"
+            android:textColorHint="@color/White" />
 
         <EditText
             android:id="@+id/enter_otp2"
@@ -38,7 +41,8 @@
             android:clickable="false"
             android:maxLength="1"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
             />
 
         <EditText
@@ -48,7 +52,8 @@
             android:clickable="false"
             android:maxLength="1"
             android:gravity="center"
-            android:textColor="@color/black"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
             />
 
         <EditText
@@ -56,7 +61,8 @@
             android:layout_width="@dimen/_50sdp"
             android:layout_height="wrap_content"
             android:clickable="false"
-            android:textColor="@color/black"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
             android:maxLength="1"
             android:gravity="center"/>
 

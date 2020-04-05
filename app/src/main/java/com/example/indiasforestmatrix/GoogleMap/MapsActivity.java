@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.example.indiasforestmatrix.Home.Dashboard;
 import com.example.indiasforestmatrix.R;
+import com.google.android.gms.common.api.Status;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -20,7 +21,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
-MapView mapView;
+    MapView mapView;
     GoogleMap gmap;
 
     @Override
@@ -96,7 +97,7 @@ MapView mapView;
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-         gmap = googleMap;
+        gmap = googleMap;
         gmap.setMinZoomPreference(12);
         gmap.setIndoorEnabled(true);
         UiSettings uiSettings = gmap.getUiSettings();
@@ -114,22 +115,21 @@ MapView mapView;
         gmap.addMarker(markerOptions);
 
         gmap.moveCamera(CameraUpdateFactory.newLatLng(ny));
-        gmap.moveCamera(CameraUpdateFactory.newLatLngZoom(ny,16F));
+        gmap.moveCamera(CameraUpdateFactory.newLatLngZoom(ny, 40F));
+    }
 
     }
 
 
-
-
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
+        /**
+         * Manipulates the map once available.
+         * This callback is triggered when the map is ready to be used.
+         * This is where we can add markers or lines, add listeners or move the camera. In this case,
+         * we just add a marker near Sydney, Australia.
+         * If Google Play services is not installed on the device, the user will be prompted to install
+         * it inside the SupportMapFragment. This method will only be triggered once the user has
+         * installed Google Play services and returned to the app.
+         */
 //    @Override
 //    public void onMapReady(GoogleMap googleMap) {
 //        try{
@@ -143,4 +143,8 @@ MapView mapView;
 //            Log.e("Maps", e.getLocalizedMessage());
 //        }
 //    }
-}
+
+
+
+
+

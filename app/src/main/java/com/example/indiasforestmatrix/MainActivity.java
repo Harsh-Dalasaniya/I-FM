@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_loginactivity);
 
         rescall =RestClient.createService(API.class);
-        Button btnGetData = (Button) findViewById(R.id.btnGetData);
         Button btnLogin = (Button) findViewById(R.id.loginbtn);
           etName = (EditText) findViewById(R.id.username);
           etPass = (EditText) findViewById(R.id.password);
