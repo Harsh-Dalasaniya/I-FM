@@ -1,5 +1,6 @@
 package com.example.indiasforestmatrix.Navigation.ui.share;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,6 +29,13 @@ public class ShareFragment extends Fragment {
             @Override
             public void onChanged(@Nullable String s) {
           //      textView.setText(s);
+
+                Intent shareIntent =   new Intent(android.content.Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT,"Insert Subject here");
+                String app_url = " https://play.google.com/store/apps/details?id=my.example.javatpoint";
+                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT,app_url);
+                startActivity(Intent.createChooser(shareIntent, "Share via"));
             }
         });
         return root;

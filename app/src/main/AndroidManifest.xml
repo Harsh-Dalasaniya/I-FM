@@ -58,7 +58,7 @@
         <activity android:name=".Content.NewsActivity" />
         <activity
             android:name=".Navigation.Navigationdrawer"
-            android:label="@string/title_activity_navigationdrawer"/>
+            android:label="@string/title_activity_navigationdrawer" />
         <activity
             android:name=".Login.Loginactivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
