@@ -59,8 +59,6 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 CardView title = (CardView) view.findViewById(R.id.infoacti);
-
-
                 final String website = "https://en.wikipedia.org/wiki/Gir_National_Park";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(website));
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
