@@ -1,6 +1,7 @@
 package com.example.indiasforestmatrix.Navigation.ui.home;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,7 +58,12 @@ public class HomeFragment extends Fragment {
         Activities.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), Infoacti.class);
+                CardView title = (CardView) view.findViewById(R.id.infoacti);
+
+
+                final String website = "https://en.wikipedia.org/wiki/Gir_National_Park";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(website));
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });
