@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_220sdp"
-            android:text="+91 96011 42001"
+            android:text="+91 99240 84209"
             android:textColor="@color/blue"
             android:textSize="@dimen/_20sdp"
             android:gravity="center"/>

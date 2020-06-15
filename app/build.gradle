@@ -67,7 +67,6 @@ dependencies {
         transitive = true
     }
     implementation 'com.karumi:dexter:4.2.0'
-
     implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjava2Version"
     implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
 

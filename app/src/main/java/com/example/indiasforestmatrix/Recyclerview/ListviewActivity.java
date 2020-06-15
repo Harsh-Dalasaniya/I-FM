@@ -34,24 +34,24 @@ public class ListviewActivity extends AppCompatActivity {
 
         li = new ArrayList<>();
         recyclerView = (RecyclerView) findViewById(R.id.list_recycle);
-        POJO data2[] = {new POJO("Gir National Park", R.drawable.gir,"https://en.wikipedia.org/wiki/Gir_National_Park")
-                ,new POJO("Sunderbans National Park", R.drawable.sunderbans,"https://en.wikipedia.org/wiki/Sundarbans_National_Park")
-                ,new POJO("Jim Corbett National Park", R.drawable.jimcorbett,"https://en.wikipedia.org/wiki/Gir_National_Park")
-                ,new POJO("Ranthambore National Park", R.drawable.ranthambhor,"https://en.wikipedia.org/wiki/Gir_National_Park")
-                ,new POJO("Bannerghatta Biological Park", R.drawable.bannerghata,"https://en.wikipedia.org/wiki/Gir_National_Park")
-                ,new POJO("Kaziranga National Park", R.drawable.kaziranga,"https://en.wikipedia.org/wiki/Gir_National_Park")
-                ,new POJO("Periyar National Park", R.drawable.periyar,"https://en.wikipedia.org/wiki/Gir_National_Park")
-                ,new POJO("Bandhavgarh National Park", R.drawable.bandhavgarh,"https://en.wikipedia.org/wiki/Gir_National_Park")
-                ,new POJO("Hemis National Park", R.drawable.hemis,"https://en.wikipedia.org/wiki/Gir_National_Park")
-                ,new POJO("The Great Himalayan National Park", R.drawable.himalayan,"https://en.wikipedia.org/wiki/Gir_National_Park")
-                ,new POJO("Tadoba", R.drawable.tadoba,"https://en.wikipedia.org/wiki/Gir_National_Park")
-                ,new POJO("Nanda Devi", R.drawable.nandadevi,"https://en.wikipedia.org/wiki/Gir_National_Park")
+        POJO data2[] = {new POJO("Gir National Park", R.drawable.gir,"https://www.girnationalpark.in/book-gir-lion-safari.html")
+                ,new POJO("Sunderbans National Park", R.drawable.sunderbans,"https://www.wbtourismgov.in/destination/place/sundarban")
+                ,new POJO("Jim Corbett National Park", R.drawable.jimcorbett,"https://www.jimcorbettonlineuk.com/")
+                ,new POJO("Ranthambore National Park", R.drawable.ranthambhor,"https://www.theranthamboresafari.com/")
+                ,new POJO("Bannerghatta Biological Park", R.drawable.bannerghata,"https://www.thrillophilia.com/tours/bannerghatta-national-park-safari")
+                ,new POJO("Kaziranga National Park", R.drawable.kaziranga,"https://www.kaziranganationalpark-india.com/online-kaziranga-safari-booking.html")
+                ,new POJO("Periyar National Park", R.drawable.periyar,"https://thekkady.org/book-online/")
+                ,new POJO("Bandhavgarh National Park", R.drawable.bandhavgarh,"http://bandhavgarh-national-park-mp-india.com/Tariff.aspx")
+                ,new POJO("Hemis National Park", R.drawable.hemis,"https://www.altitudeadventureindia.com/category/chadar-trek/")
+                ,new POJO("The Great Himalayan National Park", R.drawable.himalayan,"https://www.thrillophilia.com/tours/explore")
+                ,new POJO("Tadoba", R.drawable.tadoba,"https://tadoba-national-park-booking.com/")
+                ,new POJO("Nanda Devi", R.drawable.nandadevi,"https://www.yatra.com/hotels/adventure-hotels-near-nanda-devi-mandir-in-almora")
                 ,new POJO("Khangchendzonga", R.drawable.khangchendzonga,"https://en.wikipedia.org/wiki/Gir_National_Park")
-                ,new POJO("Panna National Park", R.drawable.panna,"https://en.wikipedia.org/wiki/Gir_National_Park")
+                ,new POJO("Panna National Park", R.drawable.panna,"https://www.yatra.com/hotels/adventure-hotels-in-panna")
                 ,new POJO("Bera", R.drawable.bera,"https://en.wikipedia.org/wiki/Gir_National_Park")
                 ,new POJO("Bhitarkanika National Park", R.drawable.bhitarkanika,"https://en.wikipedia.org/wiki/Gir_National_Park")
                 ,new POJO("Jhalana Reserve Forest", R.drawable.jhalana,"https://en.wikipedia.org/wiki/Gir_National_Park")
-                ,new POJO("Manas National Park", R.drawable.manas,"https://en.wikipedia.org/wiki/Gir_National_Park")};
+                ,new POJO("Manas National Park", R.drawable.manas,"https://nexplore.org/destinations/Assam/manas-national-park.php")};
 
         for (int i = 0; i < data2.length; i++) {
             li.add(data2[i]);
@@ -76,7 +76,6 @@ public class ListviewActivity extends AppCompatActivity {
     public void RedirectLink(View view)
     {
         title = (androidx.cardview.widget.CardView) view.findViewById(R.id.C1);
-
 
         final String website = "https://en.wikipedia.org/wiki/Gir_National_Park";
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(website));

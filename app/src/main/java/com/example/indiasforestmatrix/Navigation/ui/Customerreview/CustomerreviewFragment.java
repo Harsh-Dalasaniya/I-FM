@@ -21,7 +21,7 @@ public class CustomerreviewFragment extends Fragment {
 
     private RatingBar ratingBar;
     private TextView tvRateCount,tvRateMessage;
-    private float ratedValue;
+    private int ratedValue;
     Button submit;
 
     private CustomerreviewViewModel customerreviewViewModel;
@@ -48,35 +48,31 @@ public class CustomerreviewFragment extends Fragment {
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
 
             @Override
+            public void onRatingChanged(RatingBar ratingBar, float v, boolean b)
+            {
 
-            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-
-                ratedValue = ratingBar.getRating();
+                ratedValue = (int) ratingBar.getRating();
                 tvRateCount.setText("Your Rating : " + ratedValue + "/5.");
 
-                if(ratedValue<1){
+                if(ratedValue==1){
 
-                    tvRateMessage.setText("ohh ho...");
+                    tvRateMessage.setText("Bad");
 
-                }else if(ratedValue<2){
+                }else if(ratedValue==2){
 
                     tvRateMessage.setText("Ok.");
 
-                }else if(ratedValue<3){
+                }else if(ratedValue==3){
 
                     tvRateMessage.setText("Not bad.");
 
-                }else if(ratedValue<4){
+                }else if(ratedValue==4){
 
                     tvRateMessage.setText("Nice");
 
-                }else if(ratedValue<5){
-
-                    tvRateMessage.setText("Very Nice");
-
                 }else if(ratedValue==5){
 
-                    tvRateMessage.setText("Thank you..!!!");
+                    tvRateMessage.setText("Very Nice");
 
                 }
 
